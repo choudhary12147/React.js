@@ -13,6 +13,11 @@ function Lottery() {
        let is_winning = sum(ticket) === 15;
 
 
+       function buyticket() {
+                   setTicket(genTicket(3));   
+
+       }
+
       return (
           <div>
 
@@ -29,11 +34,13 @@ function Lottery() {
                 <h3> {is_winning && "congratulation you win"}</h3>  
 
               </div>
-              
+               <br></br>
+                
+                <button onClick={buyticket}> buy ticket</button>
+             
           </div>
+
       )
-
-
 
 }
 
