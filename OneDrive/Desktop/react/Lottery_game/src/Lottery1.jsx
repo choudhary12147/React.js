@@ -4,11 +4,11 @@ import Ticket from './Ticket';
 import { genTicket, sum } from './helper';
 
 
-export default function Lottery1({n,winningSum}) {
+export default function Lottery1({n,winningCondition}) {
     
         let [ticket,setTicket] = useState(genTicket(n));
 
-           let isWinning =  sum(ticket) === winningSum;
+           let isWinning =  winningCondition(ticket);
 
 
            let buyTicket = ()=>{
