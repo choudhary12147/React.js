@@ -5,6 +5,8 @@ export default function Product({products , indx}) {
 
 
     let [count,setcount] = useState(0);
+
+    
     
    let handleInc = ()=>{
           setcount(count++);
