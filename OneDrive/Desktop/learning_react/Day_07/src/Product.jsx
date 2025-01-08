@@ -1,20 +1,23 @@
 import { useState } from "react";
 
-
-export default function Product({products , indx}) {
+export default function Product({products , indx , cart}) {
 
 
     let [count,setcount] = useState(0);
 
-    
+
     
    let handleInc = ()=>{
           setcount(count++);
+           
+
    }
 
    let handleDec = ()=>{
           setcount(count--);
    }
+
+  
 
 
      return(
@@ -33,7 +36,7 @@ export default function Product({products , indx}) {
 
                 </div> 
 
-                <button className=" bg-lime-600 rounded-md px-8 ml-2 mb-1 ">add to card</button>
+                <button className=" bg-lime-600 rounded-md px-8 ml-2 mb-1 " onClick={cart}>add to card</button>
 
           </div>
      );
