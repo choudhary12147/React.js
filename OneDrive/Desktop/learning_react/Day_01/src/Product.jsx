@@ -6,32 +6,28 @@ export default function Product({products , idx}) {
 
             return(
                   
-                <div className=' w-40  bg-slate-500  rounded-xl' >
+                <div className=" w-[250px] bg-zinc-200  rounded-md py-2 h-[300px]">
                 
-                <h2> {products[idx].name}</h2>
+                <h2 className=" mb-3 text-lg font-semibold"> {products[idx].name}</h2>
 
                 
-                  <img className=' rounded-xl  mt-2 mb-2 h-40 w-full'  src= {products[idx].image} alt='' >
+                  <img className=" px-2  rounded-xl" src= {products[idx].image} alt='' >
 
                   </img>
 
 
-                 <p>{products[idx].disc}</p>
+                 <p className=" my-3 text-left ml-4"> Price :{products[idx].price} $</p>
 
                   
-                  <div className=' flex space-x-6 mt-2'>
+                  <div className=" ml-0">
                       
-                      <button className=' bg-lime-700  rounded-xl  ml-2 mb-2  px-2 py-2 text-white'>Add </button>
+                      <button className=" bg-green-700  rounded-md ml-0 px-4">Add to cart</button>
 
-                      <button className=' bg-red-800  rounded-xl   mb-2 px-2 py-2 text-white' >Remove </button>
+                      <button className=" bg-red-700 rounded-md ml-8 px-4"> Remove </button>
 
                   </div>
-
-                
-
                   </div>
 
             );
-
 
 }
