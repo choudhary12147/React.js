@@ -1,8 +1,5 @@
 import { useState } from "react";
 
-
-
-
 export default function Product({data, indx}) {
 
          let [count,setCount] = useState(0);
@@ -32,25 +29,31 @@ export default function Product({data, indx}) {
         <div className=" bg-white px-2">
 
 
-             <h2 className=" text-center">{data[indx].name}</h2>
+             <h1  className=" text-center">{data[indx].name}</h1>
            
                <img src= {data[indx].image} alt={data[indx].name}></img>
-
+                   
+               <p className="mt-4">{data[indx].price}</p>
+         
          
           <div  className=" flex mt-5 mb-3">
              
-                 <button className=" bg-lime-700 px-2 py-1  rounded-md"> Add</button>
+                 <button className=" bg-lime-700 px-1 py-0  rounded-md"> Add</button>
 
                   
-                 <div className=" ml-8" >
-                    <button className=" border px-2 mr-1"  onClick={handleIncclick}>+</button>
+                 <div className=" ml-2 " >
+                        
+                    <button className=" mr-2  font-bold"  onClick={handleIncclick}>+</button>
                       
+                    
                       <span>{count}</span>
 
-                   <button className=" border px-2 ml-1" onClick={handleDecClick} >-</button>
+                   <button className=" ml-2 font-bold" onClick={handleDecClick} >-</button>
                  </div>
 
           </div>
+
+
         
         </div>
 

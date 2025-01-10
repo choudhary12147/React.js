@@ -8,13 +8,13 @@ export default function Product({products , indx , cart}) {
 
     
    let handleInc = ()=>{
-          setcount(count++);
-           
+
+       count<=5?setcount(count++):count;
 
    }
 
    let handleDec = ()=>{
-          setcount(count--);
+          (count>0)?setcount(count--):count;
    }
 
   
@@ -35,6 +35,8 @@ export default function Product({products , indx , cart}) {
                     <button onClick={handleDec} className=" text-xl font-semibold ml-1" >-</button>
 
                 </div> 
+
+                  {count == 5 && <p className="  text-xs text-red-600 mb-2 ml-2">you can add only 5 items</p>}
 
                 <button className=" bg-lime-600 rounded-md px-8 ml-2 mb-1 " onClick={cart}>add to card</button>
 
