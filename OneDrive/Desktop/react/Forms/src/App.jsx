@@ -7,6 +7,8 @@ import Form from './Form';
 
 import Counter from './counter';
 
+import Joker from './Use_effect';
+
 
 function App() {
    
@@ -14,7 +16,8 @@ function App() {
       <>
       {/* <Form/> */}
       {/* <Comment/> */}
-      <Counter/>
+      {/* <Counter/> */}
+      <Joker/>
       
       </>
   );

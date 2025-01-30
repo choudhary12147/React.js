@@ -1,5 +1,5 @@
 
-import './TicketNum.css';
+import '././TicketNum.css';
 
 
 export default function TicketNum({num}) {

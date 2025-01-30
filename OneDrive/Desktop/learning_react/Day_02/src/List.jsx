@@ -17,6 +17,8 @@ export default function List({items}){
                       
                       <h2 className="" > Item : &nbsp; {item.category}</h2>
                       <p> { item.description} </p>
+
+                      <button className=" bg-green-500 rounded-md mt-2 px-[80px]">Buy</button>
                      </div>
 
                    </div>))}

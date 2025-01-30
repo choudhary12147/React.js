@@ -20,20 +20,13 @@ export default function SearchBox({updateInfo}){
    }
 
 
-
-
-
       // api call and give the details of weather
-
-
       
 
     const API_URL = "https://api.openweathermap.org/data/2.5/weather";
    
      const API_KEY = "82af70a49bf2a3501a3c9a11e4aa1fc2";
 
-
-  
 
           let getweatherinfo = async () => {
 
@@ -66,10 +59,6 @@ export default function SearchBox({updateInfo}){
              
   }
 
-
-
-
-
       // handle submision of data
 
       let handlesubmit =  async (event)=>{
@@ -93,9 +82,6 @@ export default function SearchBox({updateInfo}){
         
 
       }
-
-
-
        
      return (
            <>

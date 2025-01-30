@@ -1,4 +1,4 @@
-import TicketNum from "../TicketNum";
+import TicketNum from '../TicketNum'
 
 import './Ticket.css';
 
