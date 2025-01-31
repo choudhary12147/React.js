@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from 'react';
 import { Link } from 'react-router';
 
-const ProductTemp = ({product}) => {
+const ProductTemp = ({product , index}) => {
 
   let [counts, setCounts] = useState(0);
   
@@ -29,7 +29,7 @@ const ProductTemp = ({product}) => {
     key={product.id}
     className="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl"
   >
-     <Link to={"/product-detail"}>
+     <Link to={ `/product-detail/${product.id}`}>
       <img
         src={product.imageUrl}
         alt={product.name}
